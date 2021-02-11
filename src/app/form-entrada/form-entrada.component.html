@@ -1,0 +1,29 @@
+<form method="POST" (ngSubmit)="submit()" #listaCompraForm="ngForm">
+  <div class="form-group">
+    <label for="txtNombre">Nombre</label>
+    <input type="text" id="txtNombre" name="txtNombre" [(ngModel)]="model.nombre"/>
+  </div>
+  <div class="form-group">
+    <label for="txtCantidad">Cantidad</label>
+    <input type="number" id="txtCantidad" name="txtCantidad" [(ngModel)]="model.cantidad"/>
+  </div>
+  <div class="form-group">
+    <label for="txtCategoria">Categoria</label>
+  <select class="custom-select" id="txtCategoria" name="txtCategoria" [(ngModel)]="model.categoria">
+    <option selected>Categoría</option>
+    <option value="panaderia">Panadería y bollería</option>
+    <option value="higiene">Belleza e higiene</option>
+    <option value="bebidas">Bebidas</option>
+    <option value="frescos">Frescos</option>
+    <option value="bio">Artículos bio</option>
+    <option value="salsas">Salsas, arroz y pasta</option>
+    <option value="conservas">Conservas</option>
+    <option value="limpieza">Limpieza</option>
+    <option value="lacteos">Leche y lácteos</option>
+    <option value="cafechoco">Cafè y chocolates</option>
+  </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Añadir a la lista</button>
+  </div>
+</form>

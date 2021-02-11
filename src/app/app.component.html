@@ -1,0 +1,61 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img src="assets/haz-tu-lista.png" alt="logotipo-haz-tu-lista" height="80">
+  <h1>Haz tu lista de la compra</h1>
+    <div class="spacer"></div>
+    <a aria-label="Haztulista en twitter" target="_blank" rel="noopener" href="https://twitter.com/haztulista" title="Twitter">
+      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <rect width="400" height="400" fill="none"/>
+        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+      </svg>
+    </a>
+  <a class="button--svg" href="https://www.instagram.com/" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg"  height="55" viewBox="0 0 46 46" role="img" >
+      <path fill="#fff" d="M29.76 29.03v-7.373h-1.537c.152.48.23.975.23 1.49 0 .958-.243 1.838-.73 2.647-.485.807-1.146 1.447-1.98 1.918-.834.47-1.744.705-2.73.705-1.495 0-2.773-.514-3.835-1.543-1.062-1.027-1.593-2.27-1.593-3.726 0-.517.076-1.013.228-1.49H16.21v7.373c0 .2.065.37.2.5.13.14.296.2.494.2H29.07c.188 0 .352-.06.488-.2s.202-.3.202-.49zm-3.233-6.064c0-.94-.343-1.743-1.03-2.406-.686-.664-1.515-.996-2.486-.996-.96 0-1.78.332-2.47.996-.68.663-1.03 1.466-1.03 2.406 0 .942.35 1.743 1.03 2.407s1.51.996 2.48.996c.975 0 1.8-.34 2.49-1s1.03-1.47 1.03-2.41zm3.233-4.097v-1.88c0-.22-.076-.4-.23-.56-.15-.158-.336-.235-.556-.235h-1.98c-.22 0-.406.08-.558.233-.15.155-.228.34-.228.552v1.876c0 .22.076.404.228.556s.337.23.558.23h1.98c.22 0 .406-.078.557-.23.16-.15.23-.338.23-.558zm1.98-2.37v12.99c0 .61-.22 1.14-.66 1.58-.44.44-.967.66-1.582.66H16.502c-.614 0-1.142-.22-1.582-.66-.44-.44-.66-.97-.66-1.586V16.5c0-.614.22-1.142.66-1.582.44-.44.967-.66 1.582-.66h12.996c.615 0 1.14.22 1.582.66.44.44.66.967.66 1.58z"/>
+    </svg>
+  </a>
+</div>
+
+<div class="container-xl">
+    <div class="row">
+      <div class="col-3">
+        <!--<h2>Lista</h2>
+        <form class="example-form" id="formulario">
+          <h3>Escoger una lista</h3>
+          <label>
+            <input type="radio" value="barbacoa" name="listas">
+            Barbacoa familiar
+          </label>
+          <label>
+            <input type="radio" value="vacaciones" name="listas">
+            Vacaciones
+          </label>
+          <h3>O crea una lista</h3>
+          <mat-form-field class="example-full-width">
+          <mat-label>Cena para 4</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Cena para 4">
+        </mat-form-field>
+        <button>Crear</button>
+      </form>-->
+        <h2>Inserta un ítem a la lista</h2>
+        <app-form-entrada (onsubmit)="guardar($event)"></app-form-entrada>
+      </div>
+      <div class="col-9">
+        <h2>Lista de productos</h2>
+        <app-tabla-lista [productos]="productos"></app-tabla-lista>
+      </div>
+    </div>
+  </div>
+
+
+
+
